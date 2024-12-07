@@ -1,0 +1,17 @@
+services:
+  api:
+    image: arsanoshin/hse:december-project-api
+    container_name: december-project-api
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: /api/db/switrs.sqlite
+    volumes:
+      - ../data:/api/db
+  streamlit:
+    image: arsanoshin/hse:december-project-streamlit
+    container_name: december-project-streamlit
+    ports:
+      - "8501:8501"
+    environment:
+      BASE_URL: http://december-project-api:8000

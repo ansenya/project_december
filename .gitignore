@@ -1,0 +1,5 @@
+data/switrs.sqlite
+data/california-traffic-collision-data-from-switrs.zip
+.venv
+.idea
+*.csv
