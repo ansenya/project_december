@@ -14,7 +14,7 @@
 │   └── requirements.txt
 ├── data
 │   ├── download_data.sh
-│   └── switrs2.sqlite
+│   └── switrs.sqlite
 ├── deploy
 │   └── docker-compose.yml
 ├── jupyter
